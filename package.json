@@ -1,0 +1,46 @@
+{
+  "name": "vscode-scripts",
+  "displayName": "Reentrancy Detector",
+  "description": "A VS Code plugin to detect reentrancy vulnerabilities in Solidity contracts.",
+  "version": "1.0.0",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:extension.detectReentrancy"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.detectReentrancy",
+        "title": "检测 Reentrancy"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "extension.detectReentrancy",
+          "when": "editorHasSelection",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/node": "^22.14.1",
+    "@types/vscode": "^1.99.1",
+    "vscode": "^1.1.37",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
+  }
+}
