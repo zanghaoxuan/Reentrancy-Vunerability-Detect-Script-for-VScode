@@ -19,7 +19,7 @@ This project requires:
 - **Python**: `3.7.0`
 - **VSCode** with the ability to run `.vsix` extensions
 - You need to manually create a virtual environment (folder name: venv) at the project root
-- Python Dependencies：
+- Python Dependencies `requirements.txt`：
   ```
   absl-py==2.2.2
   antlr4-python3-runtime==4.9.3
