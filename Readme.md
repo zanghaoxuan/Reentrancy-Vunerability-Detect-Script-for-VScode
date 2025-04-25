@@ -77,7 +77,8 @@ This project requires:
   Werkzeug==3.1.3
   wrapt==1.17.2
   zipp==3.21.0
-```
+  ```
+
 ### 🔧 Installation Steps
 
 1. Create and activate a virtual environment:
